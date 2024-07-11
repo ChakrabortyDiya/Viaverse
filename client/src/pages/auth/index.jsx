@@ -1,6 +1,8 @@
 const Auth = () => {
   return (
-    <div>Auth</div>
+    <div classname="h-[100vh] w-[100vw] flex items-center justify-center">
+        Auth
+    </div>
   )
 }
 
