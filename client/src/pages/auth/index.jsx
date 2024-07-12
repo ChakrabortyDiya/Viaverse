@@ -8,6 +8,7 @@ const Auth = () => {
                 <div className="flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center">
                         <h1 className="text-5xl font-bold md:text-6xl">Welcome</h1>
+                        <img src={Victory} alt="Victory Emoji" className="h-[100px]" />
                     </div>
                 </div>
             </div>
