@@ -14,7 +14,7 @@ const Auth = () => {
                     <p className="font-medium text-center">One more step to get you started with Viaverse.</p>
                 </div>
                 <div className="flex items-center justify-center w-full">
-                    <Tabs>
+                    <Tabs className="w-3/4">
                         <TabsList className="bg-transparent rounded-none w-full">
                             <TabsTrigger value="login" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Login</TabsTrigger>
                             <TabsTrigger value="signup" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Signup</TabsTrigger>
