@@ -1,5 +1,6 @@
 import Background from "@/assets/login2.png"
 import Victory from "@/assets/victory.svg"
+import { TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 const Auth = () => {
   return (
     <div className="h-[100vh] w-[100vw] flex items-center justify-center">
@@ -13,7 +14,11 @@ const Auth = () => {
                     <p className="font-medium text-center">One more step to get you started with Viaverse.</p>
                 </div>
                 <div className="flex items-center justify-center w-full">
-                    
+                    <Tabs>
+                        <TabsList>
+                            <TabsTrigger></TabsTrigger>
+                        </TabsList>
+                    </Tabs>
                 </div>
             </div>
         </div>
