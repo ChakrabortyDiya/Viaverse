@@ -1,6 +1,6 @@
 import Background from "@/assets/login2.png"
 import Victory from "@/assets/victory.svg"
-import { TabsList, TabsTrigger } from "@radix-ui/react-tabs"
+import { TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs"
 const Auth = () => {
   return (
     <div className="h-[100vh] w-[100vw] flex items-center justify-center">
@@ -17,7 +17,10 @@ const Auth = () => {
                     <Tabs>
                         <TabsList>
                             <TabsTrigger></TabsTrigger>
+                            <TabsTrigger></TabsTrigger>
                         </TabsList>
+                        <TabsContent></TabsContent>
+                        <TabsContent></TabsContent>
                     </Tabs>
                 </div>
             </div>
