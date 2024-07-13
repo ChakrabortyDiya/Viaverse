@@ -16,8 +16,8 @@ const Auth = () => {
                 <div className="flex items-center justify-center w-full">
                     <Tabs>
                         <TabsList>
-                            <TabsTrigger></TabsTrigger>
-                            <TabsTrigger></TabsTrigger>
+                            <TabsTrigger value="login">Login</TabsTrigger>
+                            <TabsTrigger value="signup">Signup</TabsTrigger>
                         </TabsList>
                         <TabsContent></TabsContent>
                         <TabsContent></TabsContent>
