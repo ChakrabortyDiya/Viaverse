@@ -2,9 +2,12 @@ import Background from "@/assets/login2.png"
 import Victory from "@/assets/victory.svg"
 import { Tabs, TabsList } from "@/components/ui/tabs"
 import { TabsContent, TabsTrigger } from "@radix-ui/react-tabs"
+import { Input } from "postcss"
 import { useState } from "react"
 const Auth = () => {
     const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
 
   return (
     <div className="h-[100vh] w-[100vw] flex items-center justify-center">
@@ -23,7 +26,9 @@ const Auth = () => {
                             <TabsTrigger value="login" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Login</TabsTrigger>
                             <TabsTrigger value="signup" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Signup</TabsTrigger>
                         </TabsList>
-                        <TabsContent className="" value="login"></TabsContent>
+                        <TabsContent className="" value="login">
+                            <Input placeholder="Email" type="email" className="rounded-full p-6" value={email} onChange={e=>setEmail(e.target.value)} />
+                        </TabsContent>
                         <TabsContent className="" value="signup"></TabsContent>
                     </Tabs>
                 </div>
