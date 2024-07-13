@@ -19,8 +19,8 @@ const Auth = () => {
                             <TabsTrigger value="login">Login</TabsTrigger>
                             <TabsTrigger value="signup">Signup</TabsTrigger>
                         </TabsList>
-                        <TabsContent></TabsContent>
-                        <TabsContent></TabsContent>
+                        <TabsContent className="" value="login"></TabsContent>
+                        <TabsContent className="" value="signup"></TabsContent>
                     </Tabs>
                 </div>
             </div>
