@@ -10,9 +10,11 @@ const Auth = () => {
                         <h1 className="text-5xl font-bold md:text-6xl">Welcome</h1>
                         <img src={Victory} alt="Victory Emoji" className="h-[100px]" />
                     </div>
-                    <p className="font-medium text-center">One more step to get you started with Viaverse !</p>
+                    <p className="font-medium text-center">One more step to get you started with Viaverse.</p>
                 </div>
-                <div ></div>
+                <div className="flex items-center justify-center w-full">
+                    
+                </div>
             </div>
         </div>
     </div>
