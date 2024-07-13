@@ -16,7 +16,7 @@ const Auth = () => {
                 <div className="flex items-center justify-center w-full">
                     <Tabs>
                         <TabsList>
-                            <TabsTrigger value="login">Login</TabsTrigger>
+                            <TabsTrigger value="login" className="data-[state=active]:bg-transparent text-black text-opacity-90 border-b-2 rounded-none w-full data-[state=active]:text-black data-[state=active]:font-semibold data-[state=active]:border-b-purple-500 p-3 transition-all duration-300">Login</TabsTrigger>
                             <TabsTrigger value="signup">Signup</TabsTrigger>
                         </TabsList>
                         <TabsContent className="" value="login"></TabsContent>
