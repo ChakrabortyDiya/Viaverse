@@ -48,7 +48,7 @@ const Auth = () => {
                     </Tabs>
                 </div>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="hidden xl:flex items-center justify-center">
                 <img src={Background} alt="background login" className="h-[700px]"/>
             </div>
         </div>
