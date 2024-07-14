@@ -40,9 +40,10 @@ const Auth = () => {
                             <Button className="rounded-full p-6" onClick={handleLogin}>Login</Button>
                         </TabsContent>
                         <TabsContent className="flex flex-col gap-5" value="signup">
-                        <Input placeholder="Email" type="email" className="rounded-full p-6" value={email} onChange={(e)=>setEmail(e.target.value)} />
-                        <Input placeholder="Password" type="password" className="rounded-full p-6" value={password} onChange={(e)=>setPassword(e.target.value)} />
-                        <Input placeholder="Confirm Password" type="Password" className="rounded-full p-6" value={confirmPassword} onChange={(e)=>setconfirmPassword(e.target.value)} />
+                            <Input placeholder="Email" type="email" className="rounded-full p-6" value={email} onChange={(e)=>setEmail(e.target.value)} />
+                            <Input placeholder="Password" type="password" className="rounded-full p-6" value={password} onChange={(e)=>setPassword(e.target.value)} />
+                            <Input placeholder="Confirm Password" type="Password" className="rounded-full p-6" value={confirmPassword} onChange={(e)=>setconfirmPassword(e.target.value)} />
+                            <Button className="rounded-full p-6" onClick={handleSignup}>Signup</Button>
                         </TabsContent>
                     </Tabs>
                 </div>
