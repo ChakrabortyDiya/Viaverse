@@ -14,7 +14,16 @@ export const signup = async (request,response,next) => {
             return response.status(400).send("Email and Password is required.")
         }
         const user = await User.create({emal,password});
-
+        response.cookie("jwt",createToken(email,user.id),{
+            maxAge,secure: true,
+            sameSite: "None",
+        });
+        return response.status(201).json({user:{
+            id: user.id,
+            email: user.email,
+            profileSetup: user.profileSetup,
+        },
+    });
     }
     catch(error){
         console.log({error});
