@@ -37,4 +37,8 @@ userSchema.pre("Save", async function(next){
     const salt = await genSalt();
     this.password = await hash(this.password, salt);
     next();
-})
+});
+
+const User = mongoose.model("Users", userSchema);
+
+export default User;
