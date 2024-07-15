@@ -14,4 +14,4 @@ const server = app.listen(port,()=>{
     console.log(`Server is running at http://localhost:${port}`);
 });
 
-mongoose.connect(databaseURL).then(()=>console.log('DB Connection Successful'));
+mongoose.connect(databaseURL).then(()=>console.log('DB Connection Successful')).catch(err=>console.log(err.message));
