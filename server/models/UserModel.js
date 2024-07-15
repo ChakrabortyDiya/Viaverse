@@ -1,3 +1,4 @@
+import { genSalt } from "bcrypt";
 import mongoose from "mongoose"
 
 const userSchema = new mongoose.Schema({
@@ -30,4 +31,10 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
+});
+
+userSchema.pre("Save", async function(next){
+    const salt = await genSalt();
+    this.password = await hash(this.password, salt);
+    next();
 })
