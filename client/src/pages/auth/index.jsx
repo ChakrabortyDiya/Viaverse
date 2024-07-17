@@ -17,8 +17,16 @@ const Auth = () => {
             toast.error("Email is required.");
             return false;
         }
+        if(!password.length) {
+            toast.error("Password is required.");
+            return false;
+        }
+        if(password !== confirmPassword) {
+            toast.error("Password doesn't match.");
+            return false;
+        }
         return true;
-    }
+    };
 
     const handleLogin = async ()=> {
 
@@ -54,7 +62,7 @@ const Auth = () => {
                         <TabsContent className="flex flex-col gap-5" value="signup">
                             <Input placeholder="Email" type="email" className="rounded-full p-6" value={email} onChange={(e)=>setEmail(e.target.value)} />
                             <Input placeholder="Password" type="password" className="rounded-full p-6" value={password} onChange={(e)=>setPassword(e.target.value)} />
-                            <Input placeholder="Confirm Password" type="Password" className="rounded-full p-6" value={confirmPassword} onChange={(e)=>setconfirmPassword(e.target.value)} />
+                            <Input placeholder="Confirm Password" type="Password" className="rounded-full p-6" value={confirmPassword} onChange={(e)=>setConfirmPassword(e.target.value)} />
                             <Button className="rounded-full p-6" onClick={handleSignup}>Signup</Button>
                         </TabsContent>
                     </Tabs>
