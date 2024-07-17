@@ -5,7 +5,9 @@ import { TabsContent, TabsTrigger } from "@radix-ui/react-tabs"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { toast } from "sonner";
+import { toast } from "sonner"
+import { apiClient } from "@/lib/api-client"
+import { SIGNUP_ROUTE } from "@/utils/constants"
 
 const Auth = () => {
     const [email, setEmail] = useState("")
@@ -33,7 +35,8 @@ const Auth = () => {
     }
     const handleSignup = async ()=> {
         if(validateSignup()) {
-            alert("done");
+            const response = await apiClient.post(SIGNUP_ROUTE,(email,password));
+            console.log({ response });
         }
     }
 
