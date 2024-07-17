@@ -24,7 +24,9 @@ const Auth = () => {
 
     }
     const handleSignup = async ()=> {
-
+        if(validateSignup()) {
+            alert("done");
+        }
     }
 
   return (
