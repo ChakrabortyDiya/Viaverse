@@ -13,7 +13,7 @@ const databaseURL = process.env.DATABASE_URL;
 
 app.use(cors(
 {
-    origin: [process.removeListener.ORIGIN],
+    origin: [process.env.ORIGIN],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
 })
