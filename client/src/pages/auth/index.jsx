@@ -7,8 +7,8 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 import { apiClient } from "@/lib/api-client"
-import { SIGNUP_ROUTE } from "@/utils/constants"
-import { LOGIN_ROUTE } from "@/utils/constants"
+import {LOGIN_ROUTE, SIGNUP_ROUTE } from "@/utils/constants"
+
 
 const Auth = () => {
     const [email, setEmail] = useState("")

@@ -48,7 +48,8 @@ export const login = async (request,response,next) => {
         }
 
         response.cookie("jwt",createToken(email,user.id),{
-            maxAge,secure: true,
+            maxAge,
+            secure: true,
             sameSite: "None",
         });
         return response.status(200).json({user:{
